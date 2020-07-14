@@ -1,0 +1,27 @@
+<html>
+<head>
+    <h2>Various Methods in Console Function</h2>
+</head>
+<body>
+    <script>
+        console.clear();//clears the console
+        console.log("hey");//displays output on the console
+        console.error("An error occured");//error message
+        console.warn("This is a warning");//warning message
+        console.time('abc'); //specifies the time taken to execute that line
+        var fun =  function(){ 
+           console.log('fun is running'); 
+        } 
+        fun(); // calling fun();
+        console.timeEnd('abc');
+        console.table({'a':1, 'b':2, 'c':3});//creates the table in console
+        for(let i=0;i<2;i++){ 
+            console.count(i); //counts the number
+        }
+        console.group('categories');  
+          console.log('content1');
+          console.log('content2');
+        console.groupEnd('categories');//groups the contents of a block in a console
+    </script>
+</body>
+</html

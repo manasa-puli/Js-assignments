@@ -1,0 +1,21 @@
+<html>
+<head>
+    <h2>Differences between var,const,let</h2>
+</head>
+<body>
+    <script>
+        var x=5;// var used to declare variable and its scope is current execution context
+        console.log(x);
+        var name="manasa";// var can be declared with any datatype such as number,string,object etc
+        console.log(name);
+        {
+            let name="puli";//let allows to create a variable within the local scope
+            console.log('Using let we get local declared variable :', name);
+        }
+        const a=10;//const values can be assigned only once and they cannot be reassigned
+        console.log(a);
+        a=20;//error as a is const can it cannot be reassigned
+        console.log(a);
+    </script>
+</body>
+</html>
