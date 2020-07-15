@@ -1,0 +1,33 @@
+<html>
+<head>
+    <h2>String Methods and Array Methods</h2>
+</head>
+<body>
+    <script>
+        let text="Letsupgrade Java Script Essentials";
+        console.log(text.length);//returns the length of the string including space
+        console.log(text.indexOf("s"));//returns the first occurance of a char in a string
+        console.log(text.lastIndexOf("s"));//returns last occurance of a particular char in a string
+        console.log(text.search("Script"));//returns the index position of the particular string
+        console.log(text.slice(4,11)); //returns the string from specified index to the end if second parameter is not specified
+        console.log(text.substring(12,23));//returns the substring starting from to end of as mentioned 
+        console.log(text.replace("Script","-script"));//replaces the string in first parameter with the string in second parameter
+        console.log(text.toLowerCase()); //converts the string to lowercase
+        console.log(text.toUpperCase()); //converts the string to uppercase
+        console.log(text.charAt(5));//specifies the character in the given index in the string
+
+        let animals = ['cat','dog','elephant','tiger'];
+        console.log(animals.toString());
+        console.log(animals.join("-")); //joins arrays elements as string
+        animals.push("lion"); //adds elemnts to the end of the array
+        console.log(animals[4]);
+        animals.unshift("horse");//adds elements to the startin of the array
+        console.log(animals[0]);
+        console.log(animals.pop());//removes the last element of array
+        console.log(animals.shift());//removes the first element of array
+        console.log(animals.length);//returns length of array
+        animals.splice(0,1);//removes first element of array
+        console.log(animals[1]);
+    </script>    
+</body>
+</html>
