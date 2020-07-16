@@ -1,0 +1,35 @@
+<html>
+<head>
+    <h2>Marks Grading</h2>
+</head>
+<body>
+    <script>
+        let marks=prompt("Enter your marks");
+        if(marks>=75)
+            console.log("Marks are "+marks+" grade is A");
+        else if(marks>=50 && marks<75)
+            console.log("Marks are "+marks+" grade is B");
+        else if(marks<50 && marks>=35)
+            console.log("Marks are "+marks+" grade is C");
+        else
+            console.log("fail");
+    </script>
+    <script>
+        let m=prompt("enter marks");
+        switch (true) {
+            case m >= 75:
+                console.log("Marks are "+marks+" grade is A");
+                break;
+            case m >= 50:
+                console.log("Marks are "+marks+" grade is B");
+                break;
+            case m >= 35:
+                console.log("Marks are "+marks+" grade is C");
+                break;
+            default:
+                console.log("fail");
+                break;
+        }
+    </script>
+</body>
+</html>
