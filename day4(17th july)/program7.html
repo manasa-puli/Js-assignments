@@ -1,0 +1,28 @@
+<html>
+<head>
+    <h4>Prime numbers Between Intervals</h4>
+</head>
+<body>
+    <script>
+        function primeFactorsTo(max)
+        {
+        let arr  = [], i, j, primes = [];
+        for (i = 2; i <= max; ++i) 
+        {
+           if (!arr[i]) 
+           {
+               primes.push(i);
+               for (j = i << 1; j <= max; j += i) 
+               {
+                  arr[j] = true;
+               }
+           }
+        }
+        return primes;
+        }
+        let n=prompt("enter n value");
+        document.write(primeFactorsTo(n));   
+    </script>
+    
+</body>
+</html>

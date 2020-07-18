@@ -1,0 +1,19 @@
+<html>
+<head>
+    <h4>For loop that iterates the output based on the conditions</h4>
+</head>
+<body>
+    <script>
+        for (let i = 1; i <= 100; i++) {
+        let out = '';
+        if((i % 3 === 0) && (i % 5 === 0))
+            out += 'fizzbuzz';
+        else if (i % 3 === 0) 
+            out += 'fizz';
+        else if (i % 5 === 0) 
+            out += 'buzz';
+        console.log(out || i);
+        }
+    </script>   
+</body>
+</html>
