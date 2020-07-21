@@ -1,0 +1,19 @@
+<html>
+<head>
+    <h4>Higher Order Function</h4>
+</head>
+<body>
+    <script>
+        let arr=[];
+        let n=prompt("Enter the positive number");
+        for(i=1;i<=n;i++)
+        {
+            arr.push(i);
+        }
+        let odd = arr.filter(el=>el%2!=0);
+        let oddcubes = arr.filter(el=>el%2!=0).map(el=>el**3);
+        console.log(odd);
+        console.log(oddcubes);
+    </script>
+</body>
+</html>

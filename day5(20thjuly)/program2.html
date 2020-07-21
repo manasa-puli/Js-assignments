@@ -1,0 +1,71 @@
+<html>
+<head>
+    <h4>Object oriented Programming in Javascript</h4>
+</head>
+<body>
+    <script>
+        class User {
+            constructor(name,age,email) {
+                this.name=name;
+                this.age=age;
+                this.mail=email;
+                this.courses=[];
+                this.coins=0;
+            }
+
+            login() {
+                console.log(`${this.name} has logged in`);
+            }
+
+            logout() {
+                console.log(`${this.name} has logged out`);
+            }  
+
+            static greet() {
+                console.log("Hello There");
+            }
+        }
+
+        class Moderator extends User{
+            constructor(name,age,email,role){
+                super(name,age,email);
+                this.role=role;
+            }
+
+            addCoins(){
+            this.Coins++;
+            console.log(`${this.name} has added ${this.Coins} coins`);
+            return this;
+            }
+
+            deleteCoins(){
+            this.Coins--;
+            console.log(`${this.name} has deleted ${this.Coins} coins`);
+            return this;
+            }
+        }
+
+        class Admin extends Moderator{
+            addCourse(user,course){
+                user.courses.push(course);
+                console.log(user);
+            }
+
+            deleteCourse(user,course){
+                user.courses.pop(course);
+                console.log(user);
+            }
+        }
+        let user1 = new User('Manasa',21,'manasa@gmail.com');
+        let user2 = new User('vaishnavi',28,'vk@gmail.com');
+        let mod = new Moderator('ramya',24,'abhiram@gmail.com','Moderator');
+        let admin = new Admin('pandu',25,'p@gmail.com');
+        let users = [user1,user2,mod,admin];
+
+        User.greet();
+        admin.addCourse(user1,'Javascript');
+        admin.addCourse(user1,'Python');
+        admin.deleteCourse(user1,'Python');
+    </script>
+</body>
+</html>
